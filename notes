@@ -1,0 +1,21 @@
+clone https://github.com/codingforentrepreneurs/micro-ecommerce.git
+switch to start branch
+create new venv
+setup some tools
+pip install pip pip-tools rav --upgrade
+change the rv file internal paths
+office/bin/rav run installs
+rav run server
+node must be installed before run installs
+rav run watch >> to install tailwind
+rav run vendor_pull
+
+create db at neon and create db.py at the same settings directory and at settings import it <from .db import *>
+any pckage you want to install add it manually to the requirments.in then "rav run installs"
+this willinstall and add it to the requirements.txt automaitcally
+
+dj-database-url
+python-decouple
+These two will help us in removing the hard coded passwords 
+create .env at the root directory 
+.env has the actual secrets in strings and env.py has the paths represented in strings and db.py use env.py to map the db paths ans secrets
